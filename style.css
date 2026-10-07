@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Üst Menü */
+
+header {
+    background-color: #111827;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Bölümler */
+
+section {
+    min-height: 70vh;
+    padding: 100px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Ana Sayfa */
+
+#anasayfa {
+    background-color: #e8f0fe;
+    text-align: center;
+    min-height: 90vh;
+}
+
+#anasayfa h2 {
+    font-size: 50px;
+}
+
+#anasayfa p {
+    font-size: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Hakkımda */
+
+#hakkimda {
+    background-color: white;
+}
+
+#hakkimda p {
+    max-width: 750px;
+    font-size: 18px;
+}
+
+/* Yetenekler */
+
+#yetenekler {
+    background-color: #f5f7fb;
+}
+
+#yetenekler ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#yetenekler li {
+    background-color: #111827;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+/* Projeler */
+
+#projeler {
+    background-color: white;
+}
+
+#projeler div {
+    background-color: #f5f7fb;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+}
+
+#projeler h3 {
+    margin-bottom: 10px;
+}
+
+/* İletişim */
+
+#iletisim {
+    background-color: #f5f7fb;
+}
+
+#iletisim p {
+    font-size: 18px;
+}
+
+/* Alt Bilgi */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}/* Ana Sayfa Butonları */
+
+.ana-butonlar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buton {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.buton:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+.ikinci-buton {
+    background-color: transparent;
+    color: #111827;
+    border: 2px solid #111827;
+}
+
+.ikinci-buton:hover {
+    color: white;
+}/* Mobil Uyumluluk */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 70px 25px;
+        min-height: auto;
+    }
+
+    #anasayfa {
+        min-height: 85vh;
+    }
+
+    #anasayfa h2 {
+        font-size: 36px;
+    }
+
+    #anasayfa p {
+        font-size: 17px;
+    }
+
+    .ana-butonlar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buton {
+        width: 200px;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    #yetenekler ul {
+        justify-content: center;
+    }
+
+    #projeler div {
+        width: 100%;
+    }
+}
